@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "QuizViewController.h"
 
 @interface AppDelegate ()
 
@@ -15,11 +16,22 @@
 @implementation AppDelegate
 
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor cyanColor];
-    self.window.rootViewController = [[UIViewController alloc] init];
+    
+    // an instance of quizViewController so we can make it the root view
+    QuizViewController *quizVC = [[QuizViewController alloc] init];
+    
+    // set it to the root view window
+    self.window.rootViewController = quizVC;
+    
+    // set bg
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    // display it
     [self.window makeKeyAndVisible];
 
     return YES;

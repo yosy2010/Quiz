@@ -11,6 +11,8 @@
 		3BA0BA9F214C74C900B848B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BA0BA9E214C74C900B848B5 /* Assets.xcassets */; };
 		3BA0BAA2214C74C900B848B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BA0BAA0214C74C900B848B5 /* LaunchScreen.storyboard */; };
 		3BA0BAA5214C74C900B848B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA0BAA4214C74C900B848B5 /* main.m */; };
+		3BA0BAAE214C7AFF00B848B5 /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA0BAAC214C7AFF00B848B5 /* QuizViewController.m */; };
+		3BA0BAAF214C7AFF00B848B5 /* QuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BA0BAAD214C7AFF00B848B5 /* QuizViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,9 @@
 		3BA0BAA1214C74C900B848B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BA0BAA3214C74C900B848B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BA0BAA4214C74C900B848B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3BA0BAAB214C7AFF00B848B5 /* QuizViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuizViewController.h; sourceTree = "<group>"; };
+		3BA0BAAC214C7AFF00B848B5 /* QuizViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizViewController.m; sourceTree = "<group>"; };
+		3BA0BAAD214C7AFF00B848B5 /* QuizViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				3BA0BA9B214C74C700B848B5 /* AppDelegate.h */,
+				3BA0BAAB214C7AFF00B848B5 /* QuizViewController.h */,
+				3BA0BAAC214C7AFF00B848B5 /* QuizViewController.m */,
+				3BA0BAAD214C7AFF00B848B5 /* QuizViewController.xib */,
 				3BA0BA9C214C74C700B848B5 /* AppDelegate.m */,
 				3BA0BA9E214C74C900B848B5 /* Assets.xcassets */,
 				3BA0BAA0214C74C900B848B5 /* LaunchScreen.storyboard */,
@@ -122,6 +130,7 @@
 			files = (
 				3BA0BA9F214C74C900B848B5 /* Assets.xcassets in Resources */,
 				3BA0BAA2214C74C900B848B5 /* LaunchScreen.storyboard in Resources */,
+				3BA0BAAF214C7AFF00B848B5 /* QuizViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +143,7 @@
 			files = (
 				3BA0BAA5214C74C900B848B5 /* main.m in Sources */,
 				3BA0BA9D214C74C700B848B5 /* AppDelegate.m in Sources */,
+				3BA0BAAE214C7AFF00B848B5 /* QuizViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +284,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yasser.Quiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -291,7 +301,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yasser.Quiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

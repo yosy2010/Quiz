@@ -59,6 +59,7 @@
     // get the current index
     int currentIndex = [self currentQuestionIndex];
     
+    
     // get the answer string
     NSString *answer = self.answers[currentIndex];
     
